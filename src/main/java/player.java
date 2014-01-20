@@ -12,6 +12,16 @@
         LastName  = Familyname;
         Age = NewAge;
         Value = 10;
+
+        }
+
+        public player (){
+            Id = 1;
+            FirstName = "Rick";
+            LastName  = "Jansen";
+            Age = 31;
+            Value = 10;
+
         }
 
         public int getAge() {
@@ -32,14 +42,7 @@
         public int getPlayerId () {
         return Id;
         }
-        public void main(String[] args) {
-        player player_rick=new player("Rick","Jansen",31);
-        player_rick.getFirstName();
-        player_rick.getLastName();
-        player_rick.getValue();
-        player_rick.getPlayerId();
-        System.out.println(player_rick.getAge());
-        }
+
     }
 
 
