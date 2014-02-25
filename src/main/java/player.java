@@ -1,5 +1,7 @@
 
-    public class player {
+
+        public class player {
+
         private int Id;
         private String FirstName;
         private String LastName;
@@ -7,16 +9,15 @@
         private int Value;
 
         public player (String name, String Familyname, int NewAge){
-        Id = 1;
+        Id = playerid.getPlayerId();
         FirstName = name;
         LastName  = Familyname;
         Age = NewAge;
         Value = 10;
-
         }
 
         public player (){
-            Id = 1;
+            Id = playerid.getPlayerId();
             FirstName = "Rick";
             LastName  = "Jansen";
             Age = 31;
@@ -28,6 +29,9 @@
             return Age;
         }
 
+        public int getId() {
+                return Id;
+            }
         public int getValue() {
             return Value;
         }
@@ -42,6 +46,8 @@
         public int getPlayerId () {
         return Id;
         }
+        public String getPlayer() { return "Id:" + getId()+ " , "+ "FirstName:" +" " + getFirstName()+ " , "+ "LastName:" +" " +getLastName()+ " , "+ "Age:" +" " +getAge();}
+
 
     }
 
